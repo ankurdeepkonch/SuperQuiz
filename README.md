@@ -6,7 +6,7 @@ A desktop-based interactive quiz game developed using **Python and CustomTkinter
 ## ✨ Features
 
 - **Player Name:** Enter your name before playing.
-- **Question Bank:** Includes 89 general knowledge questions.
+- **Question Bank:** Includes 100 general knowledge questions.
 - **Random Questions:** Each round selects 10 random questions.
 - **Multiple-Choice Questions:** Four answer options (A, B, C, D).
 - **Countdown Timer:** Get 10 seconds to answer each question.

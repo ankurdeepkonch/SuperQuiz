@@ -86,7 +86,23 @@ questions_pool = [
     {"question": "Which is the smallest continent by area?", "options": ["Europe", "Australia", "Antarctica", "South America"], "answer": "Australia"},
     {"question": "Who is the author of 'Alice in Wonderland'?", "options": ["Lewis Carroll", "J.K. Rowling", "Mark Twain", "Charles Dickens"], "answer": "Lewis Carroll"},
     {"question": "Which gas do humans inhale?", "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"], "answer": "Oxygen"},
-    {"question": "What is 50 ÷ 5?", "options": ["5", "10", "15", "20"], "answer": "10"}
+    {"question": "What is 50 ÷ 5?", "options": ["5", "10", "15", "20"], "answer": "10"},
+    {"question": "Which instrument is used to measure atmospheric pressure?", "options": ["Thermometer", "Barometer", "Hygrometer", "Anemometer"], "answer": "Barometer"},
+    {"question": "What is the SI unit of electric current?", "options": ["Volt", "Watt", "Ampere", "Ohm"], "answer": "Ampere"},
+    {"question": "Which part of a computer is known as its brain?", "options": ["RAM", "CPU", "Hard Disk", "Monitor"], "answer": "CPU"},
+    {"question": "Which is the largest internal organ in the human body?", "options": ["Heart", "Lungs", "Liver", "Kidney"], "answer": "Liver"},
+    {"question": "How many sides does a hexagon have?", "options": ["5", "6", "7", "8"], "answer": "6"},
+    {"question": "Which programming language is primarily used for styling web pages?", "options": ["HTML", "Python", "CSS", "C++"], "answer": "CSS"},
+    {"question": "Which layer of the Earth lies directly beneath the crust?", "options": ["Core", "Mantle", "Inner Core", "Outer Core"], "answer": "Mantle"},
+    {"question": "What is the national animal of Australia?", "options": ["Koala", "Kangaroo", "Emu", "Dingo"], "answer": "Kangaroo"},
+    {"question": "Which blood cells help the body fight infections?", "options": ["Red Blood Cells", "White Blood Cells", "Platelets", "Plasma"], "answer": "White Blood Cells"},
+    {"question": "What is the value of 2 to the power of 5?", "options": ["16", "25", "32", "64"], "answer": "32"},
+    {"question": "Which device converts electrical energy into mechanical energy?", "options": ["Generator", "Electric Motor", "Transformer", "Battery"], "answer": "Electric Motor"},
+    {"question": "Which is the deepest ocean trench in the world?", "options": ["Java Trench", "Tonga Trench", "Mariana Trench", "Puerto Rico Trench"], "answer": "Mariana Trench"},
+    {"question": "Who developed the first successful polio vaccine?", "options": ["Louis Pasteur", "Jonas Salk", "Edward Jenner", "Robert Koch"], "answer": "Jonas Salk"},
+    {"question": "What does URL stand for?", "options": ["Uniform Resource Locator", "Universal Reference Link", "Unified Resource Language", "Universal Routing Location"], "answer": "Uniform Resource Locator"},
+    {"question": "Which mathematical constant represents the ratio of a circle's circumference to its diameter?", "options": ["Euler's Number", "Pi", "Phi", "Infinity"], "answer": "Pi"},
+    {"question": "Which metal is liquid at room temperature?", "options": ["Iron", "Copper", "Mercury", "Aluminium"], "answer": "Mercury"}
 ]
 
 # 2. RANDOMISATION & VARIABLES
