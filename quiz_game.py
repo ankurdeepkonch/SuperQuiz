@@ -132,12 +132,23 @@ def get_recent_scores():
     except FileNotFoundError:
         return "No previous scores yet."
 
-# 4. TIMER, SELECTION & NEXT QUESTION FUNCTIONS
+# 4. TIMER, START, SELECTION & NEXT QUESTION FUNCTIONS
 def reset_button_colors():
     btn_a.configure(fg_color="#F3F2FF", text_color="#222222")
     btn_b.configure(fg_color="#F3F2FF", text_color="#222222")
     btn_c.configure(fg_color="#F3F2FF", text_color="#222222")
     btn_d.configure(fg_color="#F3F2FF", text_color="#222222")
+
+def start_quiz():
+    # Move text back to the top of the card so the 4 buttons fit nicely
+    question_label.pack_configure(pady=(25, 20))
+    start_btn.pack_forget()
+    btn_a.pack(pady=6)
+    btn_b.pack(pady=6)
+    btn_c.pack(pady=6)
+    btn_d.pack(pady=6)
+    next_btn.pack(pady=(15, 5))
+    load_question()
 
 def update_timer():
     global time_left, timer_id
@@ -244,10 +255,10 @@ app.title("Super Quiz")
 app.geometry("420x680")
 app.configure(fg_color="#3B28CC")
 
-progress_label = ctk.CTkLabel(app, text="", font=("Arial", 15, "bold"), text_color="white")
+progress_label = ctk.CTkLabel(app, text="🪙 Welcome to Super Quiz!", font=("Arial", 16, "bold"), text_color="white")
 progress_label.pack(pady=(15, 2))
 
-timer_label = ctk.CTkLabel(app, text="⏱️ Time Left: 10s", font=("Arial", 15, "bold"), text_color="#FFD700")
+timer_label = ctk.CTkLabel(app, text="", font=("Arial", 15, "bold"), text_color="#FFD700")
 timer_label.pack(pady=(0, 10))
 
 name_entry = ctk.CTkEntry(app, placeholder_text="Enter your name...", width=340, height=36, corner_radius=15)
@@ -256,10 +267,13 @@ name_entry.pack(pady=(0, 12))
 card = ctk.CTkFrame(app, fg_color="white", corner_radius=25, width=360, height=500)
 card.pack(padx=25, pady=5, fill="both", expand=True)
 
+# Centered horizontally (justify="center") and pushed down to vertical center (pady=(140, 25))
 question_label = ctk.CTkLabel(
-    card, text="", font=("Arial", 18, "bold"), text_color="#222222", wraplength=300, justify="left"
+    card, text="Enter your name above and click Start Quiz to begin the 10-question challenge!",
+    font=("Arial", 18, "bold"), text_color="#222222", wraplength=300, justify="center"
 )
-question_label.pack(pady=(25, 20), padx=20)
+# Increase 140 -> 180 or 200 to push it further down!
+question_label.pack(pady=(180, 25), padx=20)
 
 btn_style = {
     "width": 300, "height": 44, "corner_radius": 22,
@@ -268,27 +282,24 @@ btn_style = {
 }
 
 btn_a = ctk.CTkButton(card, text="", command=click_a, **btn_style)
-btn_a.pack(pady=6)
-
 btn_b = ctk.CTkButton(card, text="", command=click_b, **btn_style)
-btn_b.pack(pady=6)
-
 btn_c = ctk.CTkButton(card, text="", command=click_c, **btn_style)
-btn_c.pack(pady=6)
-
 btn_d = ctk.CTkButton(card, text="", command=click_d, **btn_style)
-btn_d.pack(pady=6)
 
 next_btn = ctk.CTkButton(
     card, text="Save & Next ➔", command=next_question,
     width=200, height=42, corner_radius=20, fg_color="#3B28CC", text_color="white", font=("Arial", 14, "bold")
 )
-next_btn.pack(pady=(15, 5))
 
 play_again_btn = ctk.CTkButton(
     card, text="🔄 Play Again (New Questions)", command=play_again,
     width=260, height=45, corner_radius=22, fg_color="#3B28CC", text_color="white", font=("Arial", 14, "bold")
 )
 
-load_question()
+start_btn = ctk.CTkButton(
+    card, text="🚀 Start Quiz", command=start_quiz,
+    width=220, height=48, corner_radius=24, fg_color="#3B28CC", text_color="white", font=("Arial", 16, "bold")
+)
+start_btn.pack(pady=10)
+
 app.mainloop()
