@@ -1,6 +1,6 @@
 # 🪙 Super Quiz
 
-A desktop-based interactive quiz game developed using **Python and CustomTkinter**. Test your general knowledge, race against a 10-second timer, earn coins for correct answers, and track your recent quiz scores.
+A desktop-based interactive quiz game developed using **Python and CustomTkinter**. Test your general knowledge, race against a 10-second timer, earn coins for correct answers and track your recent quiz scores.
 
 ## ✨ Features
 
