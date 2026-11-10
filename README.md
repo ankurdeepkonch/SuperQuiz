@@ -1,11 +1,11 @@
-
 # 🪙 Super Quiz
 
-A desktop-based interactive quiz game developed using **Python and CustomTkinter**. Test your general knowledge, race against a 10-second timer, earn coins for correct answers, and track recent quiz scores.
+A desktop-based interactive quiz game developed using **Python and CustomTkinter**. Test your general knowledge, race against a 10-second timer, earn coins for correct answers, and track your recent quiz scores.
 
 ## ✨ Features
 
-- **Player Name:** Enter your name before playing.
+- **Player Name:** Enter your name before starting the quiz.
+- **Start Button:** Begin the quiz by clicking the Start button after entering your name.
 - **Question Bank:** Includes 100 general knowledge questions.
 - **Random Questions:** Each round selects 10 random questions.
 - **Multiple-Choice Questions:** Four answer options (A, B, C, D).
@@ -29,27 +29,41 @@ A desktop-based interactive quiz game developed using **Python and CustomTkinter
 
 ## 🚀 Getting Started
 
-Follow these steps to run the project on your computer.
+Follow these steps to set up and run the project manually on your computer.
 
-### 1. Clone the Repository
+### 1. Install Python
+
+Download and install Python from the official website:
+
+https://www.python.org/downloads/
+
+Make sure to enable **Add Python to PATH** during installation.
+
+### 2. Create the Project Folder
+
+Create a new folder named `Super-Quiz` on your computer.
+
+### 3. Create the Project Files
+
+Inside the folder, manually create these three files:
+
+- `quiz_game.py` – Main Python application.
+- `requirements.txt` – Project dependencies.
+- `scores.txt` – Stores quiz results.
+
+### 4. Install CustomTkinter
+
+Open the terminal in your project folder and run:
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+pip install customtkinter
 ```
 
-### 2. Navigate to the Project Folder
+**Important:** Install this package before running the application.
 
-```bash
-cd YOUR_PROJECT_FOLDER
-```
+### 5. Run the Application
 
-### 3. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Run the Application
+Execute the following command in the terminal:
 
 ```bash
 python quiz_game.py
@@ -58,14 +72,15 @@ python quiz_game.py
 ## 🎮 How to Play
 
 1. Launch the application.
-2. Enter your name.
-3. Read the displayed question.
-4. Select one of the four available answers.
-5. Submit your answer using the **Save & Next** button.
-6. Answer within the 10-second time limit.
-7. Earn 10 coins for every correct answer.
-8. Complete all 10 questions to see your results.
-9. Select **Play Again** to start another round.
+2. Enter your name in the player name field.
+3. Click the **Start** button to begin the quiz.
+4. Read the displayed question.
+5. Select one of the four available answers.
+6. Submit your answer using the **Save & Next** button.
+7. Answer within the 10-second time limit.
+8. Earn 10 coins for every correct answer.
+9. Complete all 10 questions to see your results.
+10. Select **Play Again** to start another round.
 
 ## 📁 Project Structure
 
@@ -87,7 +102,7 @@ Each result contains:
 - Final score out of 10
 - Total coins earned
 
-Example:
+**Example:**
 
 ```text
 Ankur : 8/10 (80 Coins)
@@ -104,4 +119,4 @@ Player : 6/10 (60 Coins)
 
 ## 👨‍💻 Author
 
-Ankur Deep Konch
+**Ankur Deep Konch**
